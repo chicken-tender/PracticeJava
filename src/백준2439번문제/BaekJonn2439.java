@@ -1,6 +1,6 @@
 package 백준2439번문제;
 import java.util.Scanner;
-
+//별 찍기 수정
 public class BaekJonn2439 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
