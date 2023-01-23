@@ -31,7 +31,7 @@ public class AccountProduct {
         return maturityAmount;
     }
     // 세후 이자 금액 구하기
-    public int realInterestMoney(int monthPayment, int period) {
+    public int realInterest(int monthPayment, int period) {
         this.payment = monthPayment;
         this.period = period;
         int sum = 0;
@@ -43,7 +43,7 @@ public class AccountProduct {
     }
     // 세후 만기 금액 구하기
     public int realMaturityAmount() {
-        realMaturityAmount = payment * period + realInterestMoney(payment, period);
+        realMaturityAmount = payment * period + realInterest(payment, period);
         return realMaturityAmount;
     }
 

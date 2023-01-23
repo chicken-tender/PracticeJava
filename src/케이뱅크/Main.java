@@ -21,7 +21,7 @@ public class Main {
 
         if(sel == 1 || sel == 2) ac.realRate(period);
         ac.basicInterest(money,period);
-        ac.realInterestMoney(money,period);
+        ac.realInterest(money,period);
         DecimalFormat formatter = new DecimalFormat("#,##0");
         String maturityAmount = formatter.format(ac.maturityAmount());
         String realMaturityAmount = formatter.format(ac.realMaturityAmount());
