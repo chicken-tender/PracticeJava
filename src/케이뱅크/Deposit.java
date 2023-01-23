@@ -23,7 +23,7 @@ public class Deposit extends AccountProduct {
     }
     // 세후 이자 금액
     @Override
-    public int realInterestMoney(int monthPayment, int period) {
+    public int realInterest(int monthPayment, int period) {
         realInterestMoney = interestMoney - (int)(interestMoney * 0.154);
         return realInterestMoney;
     }

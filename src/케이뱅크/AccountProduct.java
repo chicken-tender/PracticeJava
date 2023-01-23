@@ -36,7 +36,7 @@ public class AccountProduct {
         this.period = period;
         int sum = 0;
         for(int i = period; i > 0; i--) {
-            realInterestMoney = (int)(monthPayment * getRealRate()) * i / period;
+            realInterestMoney = (int)(monthPayment * realRate(period)) * i / period;
             sum += realInterestMoney;
         }
         return sum;
@@ -46,11 +46,7 @@ public class AccountProduct {
         realMaturityAmount = payment * period + realInterest(payment, period);
         return realMaturityAmount;
     }
-
-    public double getRealRate() {
-        return realRate;
-    }
-
+    // 적금 실제 이율 구하기
     public double realRate(int period) {
         realRate = (rate * (period + 1) / 24) * (1 - 0.154);
         return realRate;
