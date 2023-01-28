@@ -10,7 +10,16 @@ public class Main {
         Pokemon p2 = user2.setPokemon();
         p2.create();
 
+        p1.pickUpFight(p2);
+        p1.currentHpView(p2);
         p1.attack(p2);
-        p2.attacked(p1);
+        p1.currentHpView(p2);
+        p2.attack(p1);
+        p1.currentHpView(p2);
+        p1.attack(p2);
+        p1.currentHpView(p2);
+        p1.attack(p2);
+        p1.infoView();
+        p2.infoView();
     }
 }
