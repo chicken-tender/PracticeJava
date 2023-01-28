@@ -11,14 +11,8 @@ public class Main {
         p2.create();
 
         p1.pickUpFight(p2);
-        p1.currentHpView(p2);
-        p1.attack(p2);
-        p1.currentHpView(p2);
-        p2.attack(p1);
-        p1.currentHpView(p2);
-        p1.attack(p2);
-        p1.currentHpView(p2);
-        p1.attack(p2);
+        p1.pvp(p2);
+        p1.evolve();
         p1.infoView();
         p2.infoView();
     }
